@@ -1,0 +1,102 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+/*전체탭메뉴*/
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+/*탭메뉴영역*/
+.tabs {
+    width: 100%;
+}
+/*탭버튼영역*/
+.tabs .tab_btn li {
+    width: 25%;
+    border: 1px solid #b5b5b5;
+    text-align: center;
+    line-height: 46px;
+    background-color: #eaeaea;
+    cursor: pointer;
+    /*플롯*/
+    float: left;
+}
+.tabs .tab_btn li.on {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+/*탭내용*/
+.tab_contents {
+    max-width: 940px;
+    width: 100%;
+    height: auto;
+}
+/*로딩시 각각의 전체 탭 내용 가리고 시작*/
+.tab_contents .list {
+    display: none;
+}
+/*첫번째탭은 보여줌*/
+.tab_contents .list:first-child {
+    display: block;
+}
+.list .question {
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+}
+.list .question dt {
+    width: 60px;
+    text-align: center;
+    color: #5a4b4b;
+    font-weight: 500;
+    /*플롯*/
+    float: left;
+}
+.list .question dd {
+    width: 880px;
+    padding-right: 50px;
+    /*플롯*/
+    float: right;
+}
+.list .question dt, .list .question dd {
+    line-height: 52px;
+}
+
+/*답변부분*/
+/*로딩시 안보임*/
+.list .answer {
+    display: none;
+}
+
+.list .answer {
+    background-color: #eaeaea;
+    padding: 20px 0;
+    line-height: 24px;
+}
+.list .answer dt {
+    width: 60px;
+    text-align: center;
+    /*플롯*/
+    float: left;
+}
+.list .answer dd {
+    width: 880px;
+    /*플롯*/
+    float: right;
+    padding-right: 2%;
+}
+
+/*화살표 배경이미지*/
+.list .question dd.down {
+    background: url('../imges/arrow_down.png')no-repeat;
+    background-position: right center;
+}
+.list .question dd.up {
+    background: url('../imges/arrow_up.png')no-repeat;
+    background-position: right center;
+}
+
+
+
